@@ -1,8 +1,5 @@
 pipeline {
     agent { label 'jenkins-ubuntu-slave' }
-#    parameters {
-#        choice(name: 'ENV', choices: ['dev', 'test', 'prod',"release"])
-#    } 
     stages {
         stage('build') {
             steps {
